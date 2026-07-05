@@ -19,7 +19,7 @@ export default function App() {
       {route === 'home' ? (
         <HomePage onRegister={() => go('register')} />
       ) : (
-        <RegisterPage onHome={() => go('home')} />
+        <RegisterPage onHome={() => go('home')} onRegister={() => go('register')} />
       )}
     </>
   )

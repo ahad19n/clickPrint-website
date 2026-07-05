@@ -8,7 +8,7 @@ interface HomePageProps {
 
 function Hero({ onRegister }: HomePageProps) {
 	return (
-		<section className="relative overflow-hidden">
+		<section className="relative overflow-hidden pt-10">
 			<div
 				className="absolute inset-0"
 				style={{
@@ -18,10 +18,6 @@ function Hero({ onRegister }: HomePageProps) {
 			<div className="cp-in relative grid grid-cols-[1.02fr_.98fr] gap-10 items-center pt-16 pb-19">
 				{/* copy */}
 				<div>
-					<div className="cp-rise [animation-delay:.02s] inline-flex items-center gap-2.25 bg-[rgba(0,217,163,.12)] text-green-dark font-bold text-[12.5px] px-[14px] py-2 rounded-[30px] mb-[22px]">
-						<span className="w-2 h-2 rounded-full bg-green shadow-[0_0_0_4px_rgba(0,217,163,.2)]" />
-						Now onboarding print shops near campus
-					</div>
 					<h1 className="cp-rise [animation-delay:.08s] font-sora font-extrabold text-[56px] leading-[1.04] tracking-[-1.5px] mb-5">
 						Turn your printer into a campus{" "}
 						<span className="bg-linear-to-br from-[#1b3a6b] to-[#18b8c9] bg-clip-text text-transparent">goldmine.</span>
@@ -35,7 +31,7 @@ function Hero({ onRegister }: HomePageProps) {
 							onClick={onRegister}
 							className="cp-btn-primary border-none cursor-pointer font-manrope font-bold text-base text-white bg-coral px-7.5 py-4 rounded-[14px] animate-[cpPulse_2.6s_ease-in-out_infinite]"
 						>
-							Register your shop — free →
+							Register your shop
 						</button>
 						<a
 							href="#how"
@@ -45,12 +41,7 @@ function Hero({ onRegister }: HomePageProps) {
 						</a>
 					</div>
 					<div className="cp-rise [animation-delay:.28s] flex items-center gap-[10px] mt-[26px] text-muted text-[13.5px] font-semibold">
-						<div className="flex">
-							<span className="w-[30px] h-[30px] rounded-full bg-coral border-[2.5px] border-cloud" />
-							<span className="w-[30px] h-[30px] rounded-full bg-blue border-[2.5px] border-cloud -ml-[11px]" />
-							<span className="w-[30px] h-[30px] rounded-full bg-green border-[2.5px] border-cloud -ml-[11px]" />
-						</div>
-						Joined by 600+ shops across 38 campuses
+						Joined by 600+ shops with 1000 users
 					</div>
 				</div>
 
@@ -94,7 +85,7 @@ function Hero({ onRegister }: HomePageProps) {
 							{/* app screen */}
 							<div className="pt-[34px] px-4">
 								<div className="font-sora font-bold text-[15px] text-ink">Upload document</div>
-								<div className="text-[11px] text-muted mt-[2px] font-semibold">Nova Print · Main Campus</div>
+								<div className="text-[11px] text-muted mt-[2px] font-semibold">Jani Print Shop · COMSATS</div>
 								{/* doc card */}
 								<div className="mt-4 bg-white rounded-2xl p-[14px] shadow-[0_8px_20px_rgba(143,155,179,.12)]">
 									<div className="flex gap-[10px] items-center">
@@ -104,7 +95,7 @@ function Hero({ onRegister }: HomePageProps) {
 											<div className="absolute left-[7px] right-[9px] top-[25px] h-[3px] rounded-sm bg-white/65" />
 										</div>
 										<div className="flex-1">
-											<div className="text-xs font-bold text-ink">Thesis_final.pdf</div>
+											<div className="text-xs font-bold text-ink">Thesis.pdf</div>
 											<div className="text-[10.5px] text-muted font-semibold mt-[2px]">24 pages · Color · A4</div>
 										</div>
 									</div>
@@ -174,8 +165,8 @@ function Hero({ onRegister }: HomePageProps) {
 
 function StatsStrip() {
 	const stats = [
-		{ value: "38", label: "Campuses served", color: "text-white" },
-		{ value: "120K+", label: "Active students", color: "text-green" },
+		{ value: "38", label: "HEIs served", color: "text-white" },
+		{ value: "120K+", label: "Active users", color: "text-green" },
 		{ value: "2.4M", label: "Pages printed", color: "text-blue" },
 		{ value: "600+", label: "Partner shops", color: "text-coral" },
 	];
@@ -205,25 +196,25 @@ function HowItWorks() {
 			n: "1",
 			badge: "bg-[rgba(59,158,255,.12)] text-blue",
 			title: "Register your shop",
-			text: "Fill a 2‑minute form. We verify your details and list you to nearby students.",
+			text: "Fill a 2‑minute form. We verify your details and list you to nearby users.",
 		},
 		{
 			n: "2",
 			badge: "bg-[rgba(0,217,163,.12)] text-green-dark",
 			title: "Receive jobs instantly",
-			text: "Students upload and pay in the app. Pre‑paid orders land on your dashboard live.",
+			text: "Users upload and pay in the app. Pre‑paid orders land on your dashboard live.",
 		},
 		{
 			n: "3",
 			badge: "bg-[rgba(255,139,123,.14)] text-coral-deep",
 			title: "Print & hand over",
-			text: "Print the queued docs, tap done, and the student collects with a pickup code.",
+			text: "Print the queued docs, tap done, and the users collect by themselves.",
 		},
 		{
 			n: "4",
 			badge: "bg-[rgba(0,217,163,.12)] text-green-dark",
-			title: "Get paid weekly",
-			text: "Earnings settle straight to your bank account, every single week. No delays.",
+			title: "Get paid daily",
+			text: "Earnings settle straight to your bank account, every single day. No delays.",
 		},
 	];
 	return (
@@ -251,11 +242,11 @@ function HowItWorks() {
 
 function WhyPartner() {
 	return (
-		<section id="why" className="pt-16 pb-5">
+		<section id="why" className="pt-16 pb-5 scroll-mt-10">
 			<div className="cp-in">
 				<div className="max-w-[640px] mb-11">
 					<div className="font-sora font-bold text-[13px] tracking-[.6px] text-green-dark uppercase">Why partner with us</div>
-					<h2 className="font-sora font-extrabold text-[40px] tracking-[-1px] mt-3">More income from the printer you already own</h2>
+					<h2 className="font-sora font-extrabold text-[40px] tracking-[-1px] mt-3">More income from the printer you already own.</h2>
 				</div>
 				<div className="grid grid-cols-3 gap-[22px]">
 					<div className="cp-card-hover bg-coral rounded-3xl p-[30px] text-white shadow-[0_18px_40px_rgba(255,139,123,.32)]">
@@ -267,9 +258,9 @@ function WhyPartner() {
 					</div>
 					<div className="cp-card-hover bg-blue rounded-3xl p-[30px] text-white shadow-[0_18px_40px_rgba(59,158,255,.32)]">
 						<div className="w-[52px] h-[52px] rounded-[15px] bg-white/20 flex items-center justify-center text-2xl">🎓</div>
-						<h3 className="font-sora font-bold text-[21px] mt-5 mb-[10px]">Reach every student nearby</h3>
+						<h3 className="font-sora font-bold text-[21px] mt-5 mb-[10px]">Reach every user nearby</h3>
 						<p className="text-[15px] leading-[1.62] text-white/[.92]">
-							Get discovered by thousands of students on nearby campuses — no flyers, no ads, no walk‑in luck required.
+							Get discovered by thousands of users around you — no flyers, no ads, no walk‑in luck required.
 						</p>
 					</div>
 					<div className="cp-card-hover bg-green rounded-3xl p-[30px] text-[#063d31] shadow-[0_18px_40px_rgba(0,217,163,.32)]">
@@ -287,7 +278,7 @@ function WhyPartner() {
 
 function DownloadApp() {
 	return (
-		<section id="download" className="pt-[72px] pb-5">
+		<section id="download" className="pt-[72px] pb-5 scroll-mt-10">
 			<div className="cp-in">
 				<div className="bg-gradient-to-br from-[#1b3a6b] to-navy rounded-[30px] p-[52px] grid grid-cols-[1.2fr_.8fr] gap-11 items-center relative overflow-hidden shadow-[0_30px_70px_rgba(18,35,63,.28)]">
 					<div
@@ -295,35 +286,21 @@ function DownloadApp() {
 						style={{ background: "radial-gradient(circle,rgba(24,184,201,.22),transparent 70%)" }}
 					/>
 					<div className="relative">
-						<div className="font-sora font-bold text-[13px] tracking-[.6px] text-[#18b8c9] uppercase">The Click Print app</div>
+						<div className="font-sora font-bold text-[13px] tracking-[.6px] text-[#18b8c9] uppercase">The Click Print Desktop app</div>
 						<h2 className="font-sora font-extrabold text-[38px] tracking-[-1px] text-white mt-3 mb-[14px] leading-[1.08]">
-							Manage every job from your pocket
+							Manage every job from your desktop.
 						</h2>
 						<p className="text-white/[.72] text-base leading-[1.62] max-w-[440px] mb-7">
-							Accept orders, track your print queue, toggle your shop online, and watch your weekly earnings grow — all from one app. Scan
-							the code or grab it from your store.
+							Accept orders, track your print queue, toggle your shop online, and watch your earnings grow — all from one app. Scan
+							the code or click below to get started.
 						</p>
 						<div className="flex flex-wrap gap-[14px]">
 							<a
 								href="#download"
 								className="cp-storebadge flex items-center gap-[11px] bg-black rounded-[14px] px-[18px] py-[11px] cursor-pointer"
 							>
-								<span className="text-[22px]"></span>
 								<span className="leading-[1.1]">
-									<span className="block text-[10px] text-[#b9b9b9] font-semibold">Download on the</span>
-									<span className="block font-sora font-bold text-base text-white">App Store</span>
-								</span>
-							</a>
-							<a
-								href="#download"
-								className="cp-storebadge flex items-center gap-[11px] bg-black rounded-[14px] px-[18px] py-[11px] cursor-pointer"
-							>
-								<span className="w-5 h-[22px] flex items-center justify-center">
-									<span className="w-0 h-0 border-t-[11px] border-t-transparent border-b-[11px] border-b-transparent border-l-[17px] border-l-green" />
-								</span>
-								<span className="leading-[1.1]">
-									<span className="block text-[10px] text-[#b9b9b9] font-semibold">GET IT ON</span>
-									<span className="block font-sora font-bold text-base text-white">Google Play</span>
+									<span className="block font-sora font-bold text-base text-white">Download Now</span>
 								</span>
 							</a>
 						</div>
@@ -332,7 +309,6 @@ function DownloadApp() {
 						<div className="bg-white rounded-[26px] p-5 shadow-[0_24px_50px_rgba(0,0,0,.3)]">
 							<img src={qrCode} alt="Scan to download Click Print" className="w-[196px] h-[196px] block rounded-xl" />
 							<div className="text-center mt-3 font-sora font-bold text-[13.5px] text-ink">Scan to download</div>
-							<div className="text-center text-[11.5px] text-muted font-semibold mt-[2px]">Point your camera here</div>
 						</div>
 					</div>
 				</div>
@@ -425,7 +401,7 @@ function Faq() {
 		},
 	];
 	return (
-		<section id="faq" className="pt-[72px] pb-5">
+		<section id="faq" className="pt-[72px] pb-5 scroll-mt-10">
 			<div className="cp-in max-w-[840px]">
 				<div className="text-center mx-auto mb-[34px]">
 					<div className="font-sora font-bold text-[13px] tracking-[.6px] text-blue uppercase">Questions from shop owners</div>
@@ -456,13 +432,13 @@ function FinalCta({ onRegister }: HomePageProps) {
 						Ready to fill your print queue?
 					</h2>
 					<p className="relative text-[17.5px] text-[rgba(5,58,46,.82)] max-w-[520px] mx-auto mb-[30px] font-semibold">
-						Register in two minutes and start receiving pre‑paid student jobs this week.
+						Register in two minutes and start receiving pre‑paid jobs.
 					</p>
 					<button
 						onClick={onRegister}
 						className="cp-btn-primary relative border-none cursor-pointer font-manrope font-extrabold text-[16.5px] text-white bg-coral px-[38px] py-[17px] rounded-[14px] shadow-[0_14px_34px_rgba(255,123,107,.4)]"
 					>
-						Register your shop — it's free →
+						Register your shop
 					</button>
 				</div>
 			</div>
