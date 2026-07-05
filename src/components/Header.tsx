@@ -25,7 +25,7 @@ export default function Header({ isHome, onHome, onRegister }: HeaderProps) {
     <header className="sticky top-0 z-50 bg-white backdrop-blur-[14px] border-b border-[rgba(228,233,242,.7)]">
       <div className="cp-in h-18.5 flex items-center justify-between gap-5">
         <a onClick={onHome} className="flex items-center gap-2.75 cursor-pointer">
-          <img src={logo} alt="Click Print" className="h-16 w-auto block" />
+          <img src={logo} alt="ClickPrint" className="h-16 w-auto block" />
         </a>
         <nav className="cp-nav flex items-center gap-7.5 text-[14.5px] font-semibold text-muted">
           <a href="#how" onClick={handleNav('how')}>How it works</a>

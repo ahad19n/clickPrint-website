@@ -23,7 +23,7 @@ function Hero({ onRegister }: HomePageProps) {
 						<span className="bg-linear-to-br from-[#1b3a6b] to-[#18b8c9] bg-clip-text text-transparent">goldmine.</span>
 					</h1>
 					<p className="cp-rise [animation-delay:.14s] text-[18.5px] leading-[1.6] text-body max-w-130 mb-8">
-						Click Print streams thousands of pre‑paid print jobs straight to your shop. You print, you earn — no new hardware, no chasing
+						ClickPrint streams thousands of pre‑paid print jobs straight to your shop. You print, you earn — no new hardware, no chasing
 						customers.
 					</p>
 					<div className="cp-rise [animation-delay:.2s] flex flex-wrap gap-3.5 items-center">
@@ -147,7 +147,7 @@ function Hero({ onRegister }: HomePageProps) {
 									<span className="w-[9px] h-[9px] rounded-full bg-green shadow-[0_0_8px_rgba(0,217,163,.9)] animate-[cpTap_1.8s_ease-in-out_infinite]" />
 									<span className="w-[9px] h-[9px] rounded-full bg-white/[.28]" />
 								</div>
-								<div className="font-sora font-bold text-[11px] text-white/70 tracking-[.5px]">CLICK PRINT</div>
+								<div className="font-sora font-bold text-[11px] text-white/70 tracking-[.5px]">CLICKPRINT</div>
 							</div>
 							<div className="mt-3 h-[34px] bg-black/[.22] rounded-lg flex items-center justify-center gap-[7px]">
 								<span className="w-[13px] h-[13px] border-[2.5px] border-white/35 border-t-green rounded-full animate-[cpSpin_1s_linear_infinite]" />
@@ -222,7 +222,7 @@ function HowItWorks() {
 			<div className="cp-in">
 				<div className="text-center max-w-[640px] mx-auto mb-[46px]">
 					<div className="font-sora font-bold text-[13px] tracking-[.6px] text-blue uppercase">Up and running in a day</div>
-					<h2 className="font-sora font-extrabold text-[40px] tracking-[-1px] mt-3">How Click Print works for you</h2>
+					<h2 className="font-sora font-extrabold text-[40px] tracking-[-1px] mt-3">How ClickPrint works for you</h2>
 				</div>
 				<div className="grid grid-cols-4 gap-5">
 					{steps.map((s) => (
@@ -286,7 +286,7 @@ function DownloadApp() {
 						style={{ background: "radial-gradient(circle,rgba(24,184,201,.22),transparent 70%)" }}
 					/>
 					<div className="relative">
-						<div className="font-sora font-bold text-[13px] tracking-[.6px] text-[#18b8c9] uppercase">The Click Print Desktop app</div>
+						<div className="font-sora font-bold text-[13px] tracking-[.6px] text-[#18b8c9] uppercase">The ClickPrint Desktop app</div>
 						<h2 className="font-sora font-extrabold text-[38px] tracking-[-1px] text-white mt-3 mb-[14px] leading-[1.08]">
 							Manage every job from your desktop.
 						</h2>
@@ -307,7 +307,7 @@ function DownloadApp() {
 					</div>
 					<div className="relative flex justify-center">
 						<div className="bg-white rounded-[26px] p-5 shadow-[0_24px_50px_rgba(0,0,0,.3)]">
-							<img src={qrCode} alt="Scan to download Click Print" className="w-[196px] h-[196px] block rounded-xl" />
+							<img src={qrCode} alt="Scan to download ClickPrint" className="w-[196px] h-[196px] block rounded-xl" />
 							<div className="text-center mt-3 font-sora font-bold text-[13.5px] text-ink">Scan to download</div>
 						</div>
 					</div>
@@ -376,7 +376,7 @@ function Faq() {
 	const faqs = [
 		{
 			q: "Do I need special equipment to join?",
-			a: "Not at all. If you have a working printer and internet, you're ready. Jobs arrive on the Click Print app on your phone — no new machine, no software to install on a computer.",
+			a: "Not at all. If you have a working printer and internet, you're ready. Jobs arrive on the ClickPrint app on your phone — no new machine, no software to install on a computer.",
 			open: true,
 		},
 		{
@@ -389,7 +389,7 @@ function Faq() {
 		},
 		{
 			q: "What does it cost to join?",
-			a: "Joining is completely free — no signup fee and no monthly charge. Click Print takes a small transparent service fee only on completed orders, so we only earn when you do.",
+			a: "Joining is completely free — no signup fee and no monthly charge. ClickPrint takes a small transparent service fee only on completed orders, so we only earn when you do.",
 		},
 		{
 			q: "Can I pause orders when I'm busy?",
