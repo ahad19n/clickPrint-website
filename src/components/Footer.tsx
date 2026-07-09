@@ -17,9 +17,9 @@ export default function Footer({ onRegister }: FooterProps) {
               The distributed printing network turning campus print shops into always‑on, pre‑paid businesses.
             </p>
             <div className="flex gap-2.5">
-              <a href="" className="w-9.5 h-9.5 cursor-not-allowed rounded-[11px] bg-white/10 flex items-center justify-center text-[15px] font-bold">in</a>
-              <a href="" className="w-9.5 h-9.5 cursor-not-allowed rounded-[11px] bg-white/10 flex items-center justify-center text-[15px] font-bold">𝕏</a>
-              <a href="" className="w-9.5 h-9.5 cursor-not-allowed rounded-[11px] bg-white/10 flex items-center justify-center text-[15px] font-bold">f</a>
+              <a className="w-9.5 h-9.5 cursor-not-allowed rounded-[11px] bg-white/10 flex items-center justify-center text-[15px] font-bold">in</a>
+              <a className="w-9.5 h-9.5 cursor-not-allowed rounded-[11px] bg-white/10 flex items-center justify-center text-[15px] font-bold">𝕏</a>
+              <a className="w-9.5 h-9.5 cursor-not-allowed rounded-[11px] bg-white/10 flex items-center justify-center text-[15px] font-bold">f</a>
             </div>
           </div>
           <div>
